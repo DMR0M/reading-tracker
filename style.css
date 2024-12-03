@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+* {
+    margin: 0;
+}
+
+.navbar {
+    font-family: Montserrat, sans-serif;
+}
+
+.custom-container {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.search-page {
+    width: 50%;
+    min-height: 10vh;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+}
+
+.search-form>* {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.display-page {
+    width: 50%;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.reading-list-page {
+    width: 50%;
+    min-height: 125vh;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.page>* {
+    margin: 25px;
+    font-family: Merriweather, 'Times New Roman', Times, serif;
+}
+
+.row-result {
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Merriweather, 'Times New Roman', Times, serif;
+}
+
+.row-result>* {
+    margin: 20px;
+}
+
+.row-result>.col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headers {
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+#resultLbl {
+    font-size: 1.5rem;
+}
