@@ -4,6 +4,7 @@ const resultsContainer = document.querySelector('.row-results-container');
 const bookExistingError = document.querySelector(".book-exist-alert");
 const closeButton = document.querySelector(".btn-close");
 
+let bookInputField = document.getElementById("bookInputTitle");
 let readingListBooks = JSON.parse(localStorage.getItem('readingListBooks')) || [];
 
 
@@ -29,11 +30,16 @@ async function fetchBookData(sortBy) {
     console.log("fetching book data...");
     let bookInputValue = "";
     let endpoint = "";
+    console.log(sortBy);
 
     if (sortBy === "byTitle") {
+        console.log("searching by title...");
+        bookInputField = document.getElementById("bookInputTitle");
         bookInputValue = document.getElementById("bookInputTitle").value;
         endpoint = `https://openlibrary.org/search.json?title=${bookInputValue}`;
     } else if (sortBy === "byAuthor") {
+        console.log("searching by author...");
+        bookInputField = document.getElementById("bookInputAuthor");
         bookInputValue = document.getElementById("bookInputAuthor").value;
         endpoint = `https://openlibrary.org/search.json?author=${bookInputValue}`;
     } else {
